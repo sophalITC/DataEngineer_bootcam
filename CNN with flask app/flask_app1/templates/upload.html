@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>ROYAL Group Data Engineer Bootcamp</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to ROYAL Group Data Engineer Bootcamp</h1>
+
+        <form action="/upload" method="post" enctype="multipart/form-data">
+            <input type="file" name="file" accept="image/*" required>
+            <input type="submit" value="Upload">
+        </form>
+
+        {% if uploaded_image %}
+        <h3>Uploaded Image:</h3>
+        <img src="{{ uploaded_image }}" alt="Uploaded Image">
+        <h3>What's the number in the image?</h3>
+        <form action="/predict" method="post">
+            <input type="text" name="expected_class" placeholder="Expected class (0-9)" required>
+            <input type="submit" value="Submit">
+        </form>
+        {% endif %}
+
+        {% if result %}
+        <h3>Results:</h3>
+        <p>Expected Class: {{ result.expected }}</p>
+        <p>Predicted Class: {{ result.predicted }}</p>
+        {% endif %}
+    </div>
+</body>
+</html>
