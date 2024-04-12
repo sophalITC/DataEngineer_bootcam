@@ -1,7 +1,7 @@
 # Data Engineer Bootcamp
 ## Royal Group Cambodia (Ezecom, Cellcard, and Wing)
 
-Welcome to the Data Engineer Bootcamp repository, an intensive program focusing on Python for data engineering, Machine Learning, and Deep Learning, tailored for the vibrant teams at Ezecom, Cellcard, and Wing companies.
+Welcome to the repository for my Data Engineer Bootcamp, an intensive program emphasizing Python for data engineering, as well as Machine Learning and Deep Learning. Specifically crafted for the dynamic teams at Ezecom, Cellcard, and Wing, this repository is dedicated to projects that encapsulate the practical application of the skills and concepts taught in my bootcamp teaching part.
 
 ### Program Overview
 This bootcamp is designed to equip participants with the essential skills required to excel in the field of Data Engineering. Through rigorous training, hands-on projects, and comprehensive modules, participants will gain practical experience and knowledge in data analysis and machine learning.
